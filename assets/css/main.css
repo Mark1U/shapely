@@ -4,11 +4,39 @@
     font-family: 'Raleway-Regular';
 }
 
+body {
+    font-size: 14px;
+    line-height: 24px;
+}
+
 @font-face {
     font-family: 'Raleway-Regular';
     src: url(../font/Raleway-Regular.ttf);
 }
 
+.container{
+    padding: 100px 60px 00px 60px;
+}
+
+.float-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-container{
+    margin-left: 7%;
+    width: 55%;
+}
+
+.img-container{
+    margin-right: 7%;
+    width: 55%;
+}
+
+.img-container-img {
+    width: 100%;
+}
 nav {
     z-index: 1;
     height: 45px;
@@ -26,8 +54,6 @@ nav {
     /* Set the navbar to fixed position */
     top: 0;
     /* Position the navbar at the top of the page */
-    width: 100%;
-    /* Full width */
 }
 
 h2 {
@@ -35,27 +61,34 @@ h2 {
     /* color: black; */
     margin-left: 30px;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 1em;
     /* text-transform: uppercase; */
 
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 2em;
     color: white;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 24px;
 }
 
 h4 {
-    color:white
+    color: white
 }
 
 ul {
-    margin-right: 30px;
+    margin-right: 32px !important;
     color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 15px;
+    gap: 24px;
     list-style: none;
 }
 
@@ -74,6 +107,10 @@ img {
     top: 0;
 }
 
+main {
+    width: 100%;
+}
+
 .hero {
     background-image: url("../img/div.png");
     background-size: cover;
@@ -87,12 +124,31 @@ img {
 }
 
 .seo {
-    width: 100vw;
-    color:white;
+    /* width: 100vw; */
+    color: white;
+    padding-bottom: 100px;
 }
 
-.seo {
-    color:white;
+.seo_txt {
+    width: 40%;
+    color: black;
+}
+
+.seo_txt p {
+    margin-bottom: 40px;
+}
+
+.limit_txt {
+    width: 50%;
+    color: black;
+    text-align: center;
+}
+
+.limit_img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
 }
 
 .parallax {
@@ -106,12 +162,15 @@ img {
     justify-content: center;
 }
 
-.portofolio {
-    width: 100vw;
+.portfolio {
+    background-color: #f5f5f589;
+    /* width: 100vw; */
+    padding-bottom: 100px;
 }
 
 .limit {
     width: 100vw;
+    /* color:black; */
 }
 
 .projects {
@@ -141,14 +200,14 @@ img {
 }
 
 .cta h1 {
-    color:black;
+    color: black;
     text-align: left;
- }
+}
 
 
 footer {
     background-color: black;
-    color:white;
+    color: white;
     padding: 50px;
     text-align: left;
     /* height: 200px; */
@@ -170,11 +229,13 @@ footer {
 }
 
 button {
-    margin: 10px;
+    /* margin: 10px; */
+    margin-right: 10px;
     padding: 10px;
     width: 200px;
     height: 50px;
     color: white;
+    font-size: .8em;
     font-weight: 800;
     text-transform: uppercase;
     cursor: pointer;
@@ -196,12 +257,13 @@ button {
     background: #745cf9;
     color: #fff;
     border-color: #745cf9;
+    border: #745cf9 solid 0px
 }
 
 .btn-blue:hover {
     background: #745df9cc;
     border-color: #745df9cc;
-
+    border: #745df9cc solid 0px;
     color: #fff;
 }
 

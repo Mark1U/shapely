@@ -162,7 +162,8 @@ main {
 
 .limit_img {
     display: block;
-    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
     height: auto;
 
 }

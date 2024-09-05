@@ -73,6 +73,7 @@ h2 {
 }
 
 h1 {
+    line-height: 1em;
     font-size: 2em;
     color: white;
     padding: 10px;
@@ -123,6 +124,9 @@ main {
 .hero {
     background-image: url("../img/div.png");
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -170,6 +174,9 @@ main {
     text-align: center;
     background-image: url("../img/photo-1452723312111-3a7d0db0e024.jpg");
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
@@ -306,15 +313,19 @@ button {
 
 .album {
     display: flex;
-    width: 25%;
-    height: auto;
+    /* border: red solid 5px; */
+    /* /* width: 100%; */
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
 }
 
-.album-image {
-    width: 100px;
-    height: 100px;
+.album-img {
+    width: 25%;
+    object-fit: cover;
+    /* border: red solid 5px;  */
+    /* height: auto; */
+
 }
 
 .portrait {
@@ -322,3 +333,41 @@ button {
     height: 100px;
     border-radius: 50%;
 }
+
+
+/* Style the hamburger menu */
+nav a.icon {
+    /* background: black; */
+    display: block;
+    position: absolute;
+    font-size: 26px;
+    right: 20px;
+    top: 20px;
+  }
+
+.icon {
+    visibility: hidden;
+}
+
+/* phones  */
+@media only screen and (max-width: 600px) {
+   
+    
+}
+
+/* tablets */
+@media only screen and (max-width: 992px) {
+    .icon {
+        visibility: visible;
+    }
+
+    nav ul {
+        visibility:hidden;
+    }
+
+    .float-container {
+        flex-direction: column;
+    }
+}
+
+

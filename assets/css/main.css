@@ -318,12 +318,16 @@ button {
     /* border: red solid 5px; */
     /* /* width: 100%; */
     align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 10px;
+    justify-content: left;
+    /* margin-bottom: 10px; */
 }
 
 .album-img {
-    width: 25%;
+    /* height: 25vw;
+    width: 25vw; */
+    height: 24.5vw;
+    width: 24.5vw;
+    border: 0;
     object-fit: cover;
     /* border: red solid 5px;  */
     /* height: auto; */
